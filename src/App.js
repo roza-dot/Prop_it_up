@@ -1,24 +1,40 @@
 import React from 'react';
-import logo from './logo.svg';
 import './App.css';
+
+const Display = (props) => {
+  return (
+    <div>
+      <h3>Doe, Jane</h3>
+      <li>Age: 45</li>
+      <li>Hair Color: Black</li>
+
+
+      <h3>Smith, John</h3>
+      <li>Age: 85</li>
+      <li>Hair Color: Black</li>
+
+
+      <h3>Fillmore, Millard</h3>
+      <li>Age: 12</li>
+      <li>Hair Color: Blonde</li>
+
+      <h3>Smith, Maria</h3>
+      <li>Age: 63</li>
+      <li>Hair Color: Brown</li>
+
+    </div>
+
+  );
+}
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <div>
+        <Display></Display>
+
+
+      </div>
     </div>
   );
 }
